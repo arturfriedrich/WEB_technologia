@@ -4,6 +4,6 @@ Ez a repo a Széchenyi István Egyetem WEB technológia (GKNB_INTM049) tárgyán
 ### Fájlstruktúra
 A félév anyaga hetekre van bontva (n_het/), minden hét tartalmazza az azon a héten aktuális elméleti óra anyagát, valamint a gyakolatok feladatait.
 
-### Tanárok:
+### Oktató:
 - Hatwágner Ferenc Miklós (miklos.hatwagner@sze.hu, http://rs1.sze.hu/~hatwagnf/, 
     https://it.sze.hu/addressbook/person/id/1815/m/2107)
