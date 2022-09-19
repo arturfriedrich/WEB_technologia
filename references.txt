@@ -1,1 +1,2 @@
 HTML entitások: https://html.spec.whatwg.org/multipage/named-characters.html
+Regex: https://www.html5pattern.com/
