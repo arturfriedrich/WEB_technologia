@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Egyszerű űrlap</title>
+</head>
+<body>
+    <form 
+        action="http://xenia.sze.hu/~wajzy/html/urlap3.php"
+        enctype="multipart/form-data"
+        method="POST">
+        <fieldset>
+            <legend>Adja meg a kedvenc filmjének adatait!</legend>
+            <div><label for="title">Cím: </label><input type="text" name="title" placeholder="Toy Story 4."></div>
+            <div><label for="date">Megtekintés tervezett időpontja: </label><input type="datetime-local" name="date" placeholder="2019-11-24T20:00"></div>
+            <div><label for="duration">Játékidő (perc): </label><input type="number" name="duration" placeholder="100"></div>
+            <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+            <div><label for="cover">Borító: </label><input name="kepek[]" accept="image/*" type="file" name="cover"></div>
+        </fieldset>
+        <button type="submit">Küldés</button>
+    </form>
+
+</body>
+</html>
