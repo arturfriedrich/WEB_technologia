@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jármű konfogurátor</title>
+</head>
+<body>
+    <h1>Jármű konfigurátor</h1>
+    <h3>Extrák</h3>
+    <form 
+        action="http://xenia.sze.hu/~wajzy/html/urlap3.php"
+        enctype="multipart/form-data"
+        method="POST">
+        <select name="extras" id="extras">
+            <optgroup label="Biztonság">
+                <option value="led">Ledfényszórók</option>
+                <option value="windshield-heating">Első szélvédő fűtés</option>
+            </optgroup>
+            <optgroup label="Kényelem">
+                <option value="heated-seats">Fűthető ülések</option>
+                <option value="heated-steering">Fűthető kormánykerék</option>
+            </optgroup>
+        </select>
+        <h3>Szín</h3>
+        <select name="color" id="color">
+            <option value="red">Piros</option>
+            <option value="blue">Kék</option>
+            <option value="yellow">Sárga</option>
+            <option value="green">Zöld</option>
+        </select>
+        <h3>Fényezés típusa</h3>
+        <div><label><input type="radio" name="normal" />Normál</label></div>
+        <div><label><input type="radio" name="metal" />Metál</label></div>
+        <div><label><input type="radio" name="pearl" />Gyöngyház</label></div>
+        <h3>Egyéb szolgáltatások</h3>
+        <div><input type="checkbox" name="casco"><label>Casco kötés</label></div>
+        <div><input type="checkbox" name="loan"><label>Hitel</label></div>
+        <div><input type="checkbox" name="mobility"><label>Mobilitás garancia</label></div>
+        <h3>Egyéb kérés, kérdés</h3>
+        <textarea name="" id="" cols="30" rows="10" name="extraplus"></textarea>
+        <h3>Elérhetőségek, ahol ajánlatunkkal kereshetjük</h3>
+        <div><label>Tel: <input type="tel" name="tel"></label></div>
+        <div><label>E-mail: <input type="email" name="email"></label></div>
+        <input type="submit" value="Beküldés">
+    </form>
+</body>
+</html>
