@@ -2,7 +2,7 @@
 Ez a repo a Széchenyi István Egyetem WEB technológia (GKNB_INTM049) tárgyának anyagát gyűjti össze.
 
 ### Fájlstruktúra
-A félév anyaga hetekre van bontva (n_het/), minden hét tartalmazza az azon a héten aktuális elméleti óra anyagát, valamint a gyakolatok feladatait.
+A félév anyaga technológiákra bontva (HTML, CSS) található meg, ezen belül elmélet és gyakorlat mappa. A hatwagner_fajlok mappában az előadásokban található fájlok és szövegek találhatóak. 
 
 ### Oktató:
 - Hatwágner Ferenc Miklós (miklos.hatwagner@sze.hu, http://rs1.sze.hu/~hatwagnf/, 
