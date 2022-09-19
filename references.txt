@@ -1,0 +1,1 @@
+HTML entitások: https://html.spec.whatwg.org/multipage/named-characters.html
