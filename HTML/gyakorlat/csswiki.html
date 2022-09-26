@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta lang="hu-HU">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascading Style Sheets</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Cascading Style Sheets</h1>
+            <hr>
+            <h2>A Wikipédiából, a szabad enciklopédiából</h2>
+
+            A CSS a számítástechnikában egy stílusleíró nyelv, mely a <a href="https://www.w3schools.com/html/">HTML</a> vagy <a href="https://hu.wikipedia.org/wiki/XHTML" target="_blank">XHTML</a> típusú strukturált dokumentumok megjelenését írja le. Ezenkívül használható bármilyen XML alapú dokumentum stílusának leírására is, mint például az SVG, XUL stb.
+        </header>
+        <section>
+            <h2>Tartalomjegyzék</h2>
+            <ol>
+                <li><a href="#attekintes">Áttekintés</a></li>
+                <li><a href="#css-hasznalata">A <abbr title="Cascading Style Sheets, magyarul. lépcsőzetes stíluslapok">CSS</abbr> használata</a></li>
+                <ol>
+                    <li><a href="#pelda-xhtml">Példa XHTML dokumentumra beágyazott CSS stílussal</a></li>
+                    <li><a href="#pelda-style">Példa a felhasználói stílusra</a></li>
+                </ol>
+            </ol>
+        </section>
+        <h2 id="attekintes">Áttekintés</h2>
+
+        Az elemek stílusát különböző CSS szelektorokkal lehet kiválasztani:
+
+        <ul>
+            <li><em>Minden elemre</em> &mdash; a <code>*</code> szelektor használatával</li>
+            <li><em>Az elem neve alapján</em> &mdash; például minden <code>'p'</code> vagy <code>'h2'</code> HTML-elemhez</li>
+            <li><em>Leszármazottak alapján</em> &mdash; például az olyan <code>'a'</code> elemekre, melyek egy <code>'li'</code> elem részei, a szelektor <code>"li a"</code></li>
+            <li><em>class vagy id attribútumok alapján</em> &mdash; például .class és/vagy #id a <code>class="osztály"</code> vagy <code>"azonosító"</code> elemekhez</li>
+        </ul>
+        A CSS egyszerű szintaxissal rendelkezik, csak néhány angol nyelvű kulcsszót használ a stílusok tulajdonságaihoz. 
+        A stíluslap maga a stílust leíró <b>szabályok</b> sora. Minden szabályhoz tartozik egy <b>szelektor</b> és egy <b>deklarációs</b> szakasz. 
+        Ez utóbbi kapcsos zárójelek között pontosvesszővel elválasztott <b>deklarációkat</b> tartalmaz. A deklarációk formája a következő: 
+        a <b>tulajdonság</b> neve, egy kettőspont, majd az adott tulajdonság <b>értéke</b>.
+
+        Például:
+<pre>
+<span class="element">p</span> {
+    <span class="property">font-family</span>: <span class="string">"Garamond"</span>, <span class="keyword">serif</span>;
+}
+<span class="element">p</span><span class="id">#bevezetes</span> {
+    <span class="property">border</span>: <span class="quantity">3</span><span class="unit">px</span> <span class="keyword">dashed black</span>;
+}
+</pre>
+
+        <h2 id="css-hasznalata"><code>CSS használata</code></h2>
+
+        <p>A CSS használatával a h2 elem csak strukturális információt hordozhat, míg a stíluslap megadja a 
+        prezentációs tulajdonságokat. A fenti kód itt így nézne ki:</p>
+
+        <pre>&lt;h2>A CSS használata&lt;/h2></pre>
+
+        <h3 id="pelda-xhtml">Példa XHTML dokumentumra beágyazott CSS stílussal</h3>
+
+        Minta...
+        <h3 id="pelda-style">Példa a felhasználói stílusra</h3>
+
+        A <i>cimsorkiemeles.css</i> fájl tartalma:
+
+        <pre>
+h1 {color: white; background: orange !important; }
+h2 {color: white; background: green !important; }
+        </pre>
+        Egy ilyen fájl helyileg tárolódik, és a böngésző beállításaiban lehet aktiválni. Az "!important" azt jelenti, hogy a stílus a szerző specifikációja fölött is érvényesül.
+    </article>
+</body>
+</html>
