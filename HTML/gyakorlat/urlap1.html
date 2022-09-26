@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta lang="hu-HU">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="urlap1.css">
+    <title>Űrlap</title>
+</head>
+<body>
+    <form 
+        action="http://xenia.sze.hu/~wajzy/feldolgozo.php"
+        enctype="multipart/form-data"
+        method="POST">
+        <div><label for="name">Név: </label><input type="text" name="nev"></div>
+        <div><label for="age">Életkor: </label><input type="number" name="age"></div>
+        <div>
+            <label for="exams">Nyelvvizsgái: </label>
+            <select type="select" name="exams">
+                <optgroup label="Angol">
+                    <option value="alap">Alap</option>
+                    <option value="kozep">Közép</option>
+                    <option value="felso">Felső</option>
+                </optgroup>
+                <optgroup label="Német">
+                    <option value="alap">Alap</option>
+                    <option value="kozep">Közép</option>
+                    <option value="felso">Felső</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Legmagasabb iskolai végzettsége</legend>
+                <input type="radio" name="altisk"><label for="altisk">Általános iskola</label>
+                <input type="radio" name="gimn" checked><label for="gimn">Gimnázium/Középiskola</label>
+                <input type="radio" name="foisk"><label for="foisk">Főiskola/Egyetem</label>
+                <input type="radio" name="tudfok"><label for="tudfok">Tudományos fokozat</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Jelölje meg a hobbyját!</legend>
+                <label><input type="checkbox" name="cooking">Főzés</label>
+                <label><input type="checkbox" name="cycle">Biciklizés</label>
+                <label><input type="checkbox" name="reading">Olvasás</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Rövid bemutatkozás</legend>
+                <textarea name="bemutatkozas" cols="40" rows="10" placeholder="Mutatkozzon be röviden."></textarea>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Önéletrajz feltöltése</legend>
+                <div><label for="cv">Fájl: </label><input name="cv[]" accept="text/*" type="file" name="cv"></div>
+            </fieldset>
+        </div>
+        <div><input type="submit" value="Küldés"></div>
+        <div><input type="reset" value="Alephelyzet"></div>
+    </form>
+</body>
+</html>
