@@ -1,0 +1,15 @@
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px blue;
+}
+p {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 20px;
+    hyphens: auto;
+}
+
+span.szemely {
+    border-bottom: green double;
+}

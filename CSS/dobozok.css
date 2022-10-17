@@ -1,0 +1,30 @@
+.kiemelt {
+    padding-left: 15px;
+    border-left: 15px orange solid;
+    background-color: rgb(240, 240, 240);
+}
+
+.durva {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.racsos p {
+    margin: 0;
+}
+
+.racsos .fej {
+    color: rgb(237, 234, 142);
+    background-color: rgb(173, 116, 36);
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(107, 89, 65);
+}
+
+.racsos .sor {
+    background-color: rgb(242, 201, 143);
+    padding: 5px;
+    border-top: 1px solid rgb(107, 89, 65);
+    border-bottom: 1px solid rgb(107, 89, 65);
+}
