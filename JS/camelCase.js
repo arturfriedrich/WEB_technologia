@@ -1,4 +1,6 @@
-let szoveg = ["java", "script"]
+const javascript = ["java", "script", "function"]
+const python = ["PyTHon", "FuNCTion"]
+
 
 function toCamelCase(array) {
     let newArray = []
@@ -8,4 +10,5 @@ function toCamelCase(array) {
     return newArray.join('')
 }
 
-console.log(toCamelCase(szoveg))
+console.log(toCamelCase(javascript))
+console.log(toCamelCase(python))
