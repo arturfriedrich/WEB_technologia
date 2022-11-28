@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visszaszámolás</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Adjon meg egy időpontot!</legend>
+        <form id="form">
+        <label>Időpont: </label><input type="datetime-local" id="dateInput">
+        <input type="submit" value="OK!">
+        </form>
+        <p>Még <span id="result"></span> van hátra</p>
+    </fieldset>
+</body>
+<script>
+    document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault()
+        const date = document.getElementById("dateInput").value
+        const result = document.getElementById("result")
+        let hour = date.slice(11, 13)
+        let min = date.slice(14, 16)
+        setInterval(() => {
+            let now = new Date
+            const hourRem = parseInt(hour) - now.getHours()
+            const minRem = parseInt(min) - now.getMinutes()
+            const secRem = 59 - now.getSeconds()
+            result.textContent = `${hourRem} : ${minRem} : ${secRem}`
+        }, 1000)
+    })
+</script>
+</html>
