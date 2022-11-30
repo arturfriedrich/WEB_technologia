@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelszó erősség mérő</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Megadja a jelszó erősségét</legend>
+        <label>Jelszó: </label><input type="text" id="pwd">
+        <button id="btn">Ellenőriz!</button>
+        <p>A jelszó erőssége: <span id="res"></span> pont.</p>
+    </fieldset>
+</body>
+<script>
+    
+    btn.addEventListener("click", () => {
+        const btn = document.getElementById("btn")
+        const pwd = document.getElementById("pwd").value
+        const res = document.getElementById("res")
+    
+        let counter = {
+            normal: 0,
+            capital: 0,
+            number : 0,
+            misc: 0
+        }
+
+        console.log("Hello")
+        for ( let i = 0; i<pwd.length; i++ ) {
+            let current = pwd[i]
+            if ( current >= "a" && current <= "z" ) { counter.normal += 1 }
+            else if ( current >= "A" && current <= "Z" ) { counter.capital += 1 }
+            else if ( current >= "0" && current <= "9" ) { counter.number += 1 }
+            else { counter.misc += 1 }
+        }
+
+        let sum = 0
+        for ( let key in counter ) {
+            if ( counter[key] > 0 ) {
+                sum += 5 + counter[key]
+            }
+        }
+        
+        res.textContent = sum
+    })
+</script>
+</html>
