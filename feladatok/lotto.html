@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottó</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Gombnyomásra lottó számokat generál</legend>
+        <button id="gen">Generál!</button>
+        <input type="text" id="res" readonly>
+    </fieldset>
+</body>
+<script>
+    const btn = document.getElementById("gen")
+    const res = document.getElementById("res")
+
+    btn.addEventListener("click", () => {
+        let lotto = new Set
+    
+        do {
+            lotto.add(Math.floor(Math.random() * 90))
+        } while (lotto.size != 5)
+    
+        const sortedLotto = Array.from(lotto).sort((a, b) => a - b)
+        res.value = sortedLotto
+    })
+</script>
+</html>
