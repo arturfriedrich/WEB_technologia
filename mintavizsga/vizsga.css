@@ -4,3 +4,7 @@ h1 {
     border-style: dotted;
     border-radius: 10px;
 }
+
+table {
+    border-collapse: collapse;
+}
