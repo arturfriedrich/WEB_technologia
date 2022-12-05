@@ -22,3 +22,8 @@ td, th {
 input[type="number"] {
     width: 75px;
 }
+
+img {
+    height: 39px;
+    vertical-align: text-bottom;
+}
