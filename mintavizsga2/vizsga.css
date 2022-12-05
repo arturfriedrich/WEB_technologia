@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Zilap";
+    src: url("zilap.ttf");
+}
+    
+    
+
 body {
     width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Zilap";
 }
