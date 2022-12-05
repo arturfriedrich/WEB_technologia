@@ -18,3 +18,7 @@ td, th {
 .ures {
     border: none;
 }
+
+input[type="number"] {
+    width: 75px;
+}
