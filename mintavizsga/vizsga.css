@@ -27,3 +27,8 @@ img {
     height: 39px;
     vertical-align: text-bottom;
 }
+
+a:hover {
+    color: black;
+    background-color: yellow;
+}
